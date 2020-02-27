@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : mailpatientupdate
+    Created on : 27 Feb, 2020, 6:24:11 PM
+    Author     : Parthik Shah
+--%>
 <%@page import="mail.sendSMS"%>
 <%@page import="mail.SendEmail"%>
 <%--<%@page import="ps.SendingEmail.sendMail(String, String, String, String, String)"%>--%>
@@ -42,8 +46,8 @@
         }
         String num="91"+phone;
         SendEmail se=new SendEmail();
-        String send = "<h3>You visted Doctor:"+name+"<br><br>At:"+address+"<br><br></h3><h5>If Any Query Contact Us</h5>";
-        String msg="You visted Doctor:"+name+"At:"+address+"If Any Query Contact Us";
+        String send = "<h3>You visted Doctor:"+name+"<br><br>At:"+address+"<br><br></h3><h5>"+name+" are Updated your Record</h5>";
+        String msg="You visted Doctor:"+name+"At:"+address+""+name+"are Updated Your Record";
         boolean x=se.sendfile("medssip@gmail.com","medssip@123",email,send);
        // sendSMS sm=new sendSMS();
         //sm.sendSms(num,msg);

@@ -4,7 +4,8 @@
     Author     : Parthik Shah
 --%>
 
-<%@page import="ps.SendingEmail"%>
+<%@page import="mail.SendEmail"%>
+
 <%@page import="java.sql.*"%>
 <%@page  import="org.apache.commons.lang.RandomStringUtils" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -59,8 +60,8 @@
          {
               String send=("Your Name:"+firstname+""+lastname+" \n Your ID Number:"+id+"\n Your Mobile Number:"+phone+"\n");
              out.print("Success");
-             SendingEmail se = new SendingEmail();
-                    se.sendMail(email,"Your Details",send,"bisagasset@gmail.com","bisag__@@");
+             SendEmail se = new SendEmail();
+                    se.sendfile("medssip@gmail.com","medssip@123",email,send);
                    response.sendRedirect("http://localhost:8084/WebApplication1/sch/dashboard.html");
          }
          

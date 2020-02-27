@@ -154,6 +154,7 @@
                 {
                         alert(req.responseText);
                         myload();
+                        window.location.href="http://localhost:8084/WebApplication1/sch/mailpatientupdate.jsp?pid="+pid;
 //                    document.getElementById(col).innerHTML=req.responseText;
                 }
 
@@ -171,7 +172,7 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html">Concept</a>
+                <a class="navbar-brand" href="index.html">Medico</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -182,7 +183,7 @@
                                 <%=pid%>
                             </div>
                         </li>
-                        <li class="nav-item dropdown notification">
+<!--                        <li class="nav-item dropdown notification">
                             <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
                             <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                                 <li>
@@ -267,10 +268,10 @@
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
                                     <span class="status"></span><span class="ml-2">Available</span>
-                                </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                </div>-->
+                                <a class="dropdown-item" href="#pills-msg"><i class="fas fa-user mr-2"></i>Account</a>
+                                <!--<a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>-->
+                                <a class="dropdown-item" href="logoutdr.jsp"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
                     </ul>
@@ -283,7 +284,7 @@
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-        <div class="nav-left-sidebar sidebar-dark">
+<!--        <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -572,13 +573,13 @@
                 </nav>
             </div>
         </div>
-        <!-- ============================================================== -->
+         ============================================================== -->
         <!-- end left sidebar -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- wrapper  -->
         <!-- ============================================================== -->
-        <div class="dashboard-wrapper">
+        <div class="influence-profile">
             <div class="influence-profile">
                 <div class="container-fluid dashboard-content ">
                     <!-- ============================================================== -->
@@ -734,10 +735,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="section-block">
+<!--                                        <div class="section-block">
                                             <h3 class="section-title">Campaign List</h3>
-                                        </div>
-                                        <div class="card">
+                                        </div>-->
+<!--                                        <div class="card">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -752,14 +753,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="border-top card-footer p-0">
+-->                                           
+<!--                                    </div>
+-->                                            
                                                 
                                                 
-                                                Import aallergy table
+                                                <!--
                                                 
                                                                                             </div>
-                                        </div>
+                                        </div>-->
                                         
 <!--
                                         <div class="card">
@@ -1130,7 +1132,7 @@
             <!-- ============================================================== -->
             <!-- end content -->
             <!-- ============================================================== -->
-            <div class="footer">
+<!--            <div class="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -1145,7 +1147,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
